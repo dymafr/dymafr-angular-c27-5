@@ -1,4 +1,4 @@
-import { createReducer, on } from '@ngrx/store';
+import { createReducer } from '@ngrx/store';
 import { Todo } from '../interfaces/todo.interface';
 
 export interface TodosState {

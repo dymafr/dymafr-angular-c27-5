@@ -1,11 +1,8 @@
 import { Action, ActionReducerMap } from '@ngrx/store';
-import { Todo } from '../interfaces/todo.interface';
-import { todosReducer } from './todo.reducer';
+import { todosReducer, TodosState } from './todos.reducer';
 
 export interface AppState {
-  todos: {
-    data: Todo[];
-  };
+  todos: TodosState;
 }
 
 export const ROOT_REDUCERS: ActionReducerMap<AppState, Action> = {
